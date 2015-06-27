@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>ViajaFácil</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/pro_bot.css">
+	<link rel="stylesheet" type="text/css" href="css/reg.css">
+	<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/core_viaja.js"></script>
+	<script type="text/javascript">
+	function validar(){
+	var nombre = document.getElementById('nombre');
+	var patron1=/[A-Za-z]/;
+	verificar(patron1,nombre);
+	console.log("si cumple");
+	var apellidos = document.getElementById('apellidos');
+	var patron2=/[A-Za-z]/;
+	verificar(patron2,apellidos);
+	console.log("si cumple");
+	var dni = document.getElementById('dni');
+	var patron3=/[0-9]{8}/;
+	verificar(patron3,dni);
+	console.log("si cumple");
+	var contra = document.getElementById('contra');
+	var patron4=/[A-Za-z]/;
+	verificar(patron4,contra);
+	console.log("si cumple");
+	var email = document.getElementById('email');
+	var patron5=/[\w-\.]{3,}@([\w-]{2,}\.)*([\w-]{2,}\.)[\w-]{2,4}/;
+	verificar(patron5,email);
+	console.log("si cumple");
+	var telefono = document.getElementById('telefono');
+	var patron6=/[1-9]{7,9}/;
+	verificar(patron6,telefono);
+	console.log("si cumple");
+
+	}
+
+
+	</script>
+
+</head>
+
+
+<body>
+
+<div class="reat">
+<header class="color1">
+	<div class="row">
+			<h1 class="logo tamtex1">VIAJA FÁCIL</h1>
+			<h5 class="logo ">Empresa de Transporte</h5>
+	</div>
+</header>
+
+
+<nav class="navbar navbar-default text1">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Cambiar Navegacion</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button><a href="#" class="navbar-brand">NAVEGACIÓN</a>
+					</div>
+
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav">		
+							<li id="joven"><a href="pro_bot.html">Inicio</a></li>
+							<li id="joven" class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Itinerarios<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+								<li ><a href="dest.html">Destinos</a></li>
+								<li><a href="horarios.html">Horarios</a></li>
+								</ul>
+							</li>
+							<li id="joven" class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Pasajero Frecuente<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+								<li ><a href="reg.html">Tu Cuenta</a></li>
+								<li><a href="beneficios.html">Beneficios</a></li>
+								
+								</ul>
+							</li>
+							<li id="joven"><a href="servicios.html">Servicios</a></li>
+							<li id="joven" class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Encuentranos<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+								<li ><a href="agencias.html">Agencias</a></li>
+								<li><a href="centros.html">Centros Comerciales</a></li>
+								<li><a href="contactenos.html">Contáctenos</a></li>
+								<li><a href="teleticket.html">Teleticket</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
+	</nav>
+
+
+
+<div class="container-fluid" id="full">
+    	<div class="container-page">				
+			<div class="col-md-6">
+				<h3 class="dark-grey">Registro</h3>
+				
+				<div class="form-group col-lg-6">
+					<label>Nombres</label>
+					<input type="text" name="nombre" class="form-control" id="nombre" value="">
+				</div>
+				
+				<div class="form-group col-lg-6">
+					<label>Apellidos</label>
+					<input type="text" name="apellidos" class="form-control" id="apellidos" value="">
+				</div>
+
+				<div class="form-group col-lg-6">
+					<label>DNI</label>
+					<input type="text" name="dni" class="form-control" id="dni" value="">
+				</div>
+				
+				<div class="form-group col-lg-6">
+					<label>Contraseña</label>
+					<input type="password" name="contra" class="form-control" id="contra" value="">
+				</div>
+								
+				<div class="form-group col-lg-6">
+					<label>Correo Electrónico</label>
+					<input type="text" name="email" class="form-control" id="email" value="">
+				</div>
+				
+				<div class="form-group col-lg-6">
+					<label>Teléfono</label>
+					<input type="text" name="telef" class="form-control" id="telefono" value="">
+				</div>			
+				
+				<div class="col-sm-6">
+					<input type="checkbox" class="checkbox">Recibir notificaciones a mi correo
+				</div>
+
+				<div class="col-sm-6">
+					<input type="checkbox" class="checkbox">Acepto Términos y Condiciones
+				</div>				
+			
+			</div>
+		
+			<div class="col-md-6">
+				<h3 class="dark-grey">Términos y Condiciones</h3>
+				<p align="justify">
+					Al hacer click en "Registrar", estás aceptando todos nuestros términos y condiciones
+				</p>
+				<p align="justify">
+					Aunque es poco común, los precios están sujetos a cambios de acuerdo a las fluctuaciones del tipo de cambio -
+					debe producirse una fluctuación tal, podemos solicitar un pago adicional. Usted tiene la opción de solicitar un reembolso completo o para pagar el nuevo precio.
+				</p>
+				<p align="justify">
+					De existir un error en la descripción o la fijación de precios de un producto, nosotros le ofrecemos un reembolso completo.
+				</p>
+				<p align="justify">
+					La empresa se guarda el derecho a cancelar algún si lo cree conveniente por algún factor externo ajeno a nuestras capacidades.
+				</p>
+				
+				<button type="submit" class="btn btn-primary" onclick="validar()">Registrar</button>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>

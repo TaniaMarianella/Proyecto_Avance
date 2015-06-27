@@ -1,0 +1,194 @@
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>ViajaFácil</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/pro_bot.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+</head>
+
+
+<body>
+
+<div class="reat">
+<header class="color1">
+	<div class="row">
+			<h1 class="logo tamtex1">VIAJA FÁCIL</h1>
+			<h5 class="logo ">Empresa de Transporte</h5>
+	</div>
+</header>
+
+
+<nav class="navbar navbar-default text1">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Cambiar Navegacion</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						
+					</button><a href="#" class="navbar-brand">NAVEGACIÓN</a>
+					</div>
+
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav">		
+							<li id="joven"><a href="pro_bot.html">Inicio</a></li>
+							<li id="joven" class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Itinerarios<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+								<li ><a href="dest.html">Destinos</a></li>
+								<li><a href="horarios.html">Horarios</a></li>
+								</ul>
+							</li>
+							<li id="joven" class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Pasajero Frecuente<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+								<li ><a href="reg.html">Tu Cuenta</a></li>
+								<li><a href="beneficios.html">Beneficios</a></li>
+								
+								</ul>
+							</li>
+							<li id="joven"><a href="servicios.html">Servicios</a></li>
+							<li id="joven" class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Encuéntranos<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+								<li ><a href="agencias.html">Agencias</a></li>
+								<li><a href="centros.html">Centros Comerciales</a></li>
+								<li><a href="contactenos.html">Contáctenos</a></li>
+								<li><a href="teleticket.html">Teleticket</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
+	</nav>
+
+
+
+<div class="container-fluid">
+	<section>
+	<div class="row">
+		<div class="col-lg-3">
+			<form class="venta_for text2">
+				<legend>Compra en Línea</legend>
+				<div class="form-group">
+					<label for="origen">Origen</label>
+					<select id="origen" class="form-control">
+					<option>Lima</option>
+					<option>Trujillo</option> 
+					<option>Cuzco</option> 
+					<option>Ayacucho</option>
+					<option>Amazonas</option>
+					<option>Loreto</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="destino">Destino</label>
+					<select id="destino" class="form-control">
+					<option>Lima</option>
+					<option>Trujillo</option> 
+					<option>Cuzco</option> 
+					<option>Ayacucho</option>
+					<option>Amazonas</option>
+					<option>Loreto</option>
+					</select>
+				</div>
+
+				<b>Ida</b>
+     
+     			<div class="form-group">
+                <div class='input-group date' id='datetimepicker2'>
+                    <input type='date' class="form-control">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            	</div>
+
+                <b>Vuelta(opcional)</b>
+     
+     			<div class="form-group">
+                <div class='input-group date' id='datetimepicker2'>
+                    <input type='date' class="form-control">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            	</div>
+
+  				
+  				<button id="singlebutton" name="singlebutton" class="btn btn-success">Buscar</button>
+			</form>
+		</div>
+		<div class="col-lg-9 slider">
+			<section id="miSlide" class="carousel slide">
+                <ol class="carousel-indicators">
+                    <li data-target="#miSlide" data-slide-to="0" class="active"></li>
+                    <li data-target="#miSlide" data-slide-to="1"></li>
+                    <li data-target="#miSlide" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/6.jpeg" class="adaptar" id="alt">
+                    </div>
+                    <div class="item">
+                        <img src="img/7.jpg" class="adaptar" id="alt">
+                    </div>
+                    <div class="item">
+                        <img src="img/8.jpg" class="adaptar" id="alt">
+                    </div>
+                </div>
+
+                <a href="#miSlide" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                <a href="#miSlide" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+		</div>
+	</div>
+	</section>
+</div>
+<div>
+	<div class="row color6 navbar navbar-default text2">
+				<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Cambiar Navegacion</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button><a href="#" class="navbar-brand" id="colr"><b>OFERTAS</b></a>
+					</div>
+
+					<div class="collapse navbar-collapse navbar-ex1-collapse"  id="colr">
+						<ul class="nav navbar-nav">		
+							<li id="joven"><a href=""><b>Lima-Chiclayo</b></a></li>
+							<li id="joven"><a href=""><b>Lima-Cuzco</b></a></li>
+							<li id="joven"><a href=""><b>Lima-Trujillo</b></a></li>
+							<li id="joven"><a href=""><b>Chiclayo-Trujillo</b></a></li>
+							<li id="joven"><a href=""><b>Cuzco-Puno</b></a></li>
+						</ul>
+					</div>
+			</div>
+</div>
+
+
+
+	<footer>
+			<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-4 color7">
+					<h4 align="center">Central Telefónica</h4>
+					<p align="center" id="fotpar"><b>666-6969</b></p>
+				</div>
+				<div class="col-lg-4 color7">
+					<h4 align="center">E-mail</h4>
+					<p align="center" id="fotpar"><b>eljoven@olakase.com</b></p>
+				</div>
+				<div class="col-lg-4 color7">
+					<h4 align="center">Siguenos en</h4>
+					<p align="center" id="fotpar"><b>Hi5-Facebook-Twitter-Instagram</b></p>
+				</div>	
+		</div>
+	</footer>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
